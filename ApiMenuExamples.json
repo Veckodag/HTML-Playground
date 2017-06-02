@@ -1,0 +1,28 @@
+"menues":[
+    {   "name":"Subsites",
+        "link":null,
+        "subMenues": [
+            {   "name":"Site A",
+                "link":"http://www.livearena.com/",
+                "subMenues":null
+            },
+            {   "name":"Site B",
+                "link":"http://playsite1.dev.playsite.devmpp.com/Vod/64ebb6bf80ce44c0ab261b11995c88ba",
+                "subMenues":null
+            }
+        ]
+    },
+    {   "name":"Archive",
+        "link":"http://playsite1.dev.playsite.devmpp.com/Search/dGVzdA==/",
+        "subMenues": [
+            {   "name":"Archive sub",
+                "link":"sports.livearena.com",
+                "subMenues":null
+            }
+        ]
+    },
+    {   "name":"Search",
+        "link":"http://playsite1.dev.playsite.devmpp.com/Search/",
+        "subMenues":null
+    }
+]

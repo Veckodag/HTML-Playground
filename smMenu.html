@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+<title>The Rock (1996)</title>
+<meta property="og:title" content="The Rock" />
+<meta property="og:type" content="video.movie" />
+<meta property="og:url" content="http://www.imdb.com/title/tt0117500/" />
+<meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg" />
+    <meta charset="UTF-8">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Small Menu Thing Test</title>    
+</head>
+<body>    
+  <h1>Hello World</h1>
+<div id="navItemsContainerMobile" class="col-xs-offset-2 col-xs-10 hidden-lg hidden-md hidden-sm">
+  <ul class="nav navbar-nav">
+
+    <!-- If not logged in -->
+    <li class="dropdown" ng-hide="topNavigationCtrl.loggedIn || topNavigationCtrl.openSiteNoLogin">
+      <div class="mobileSubContainer">
+        <span class="dropdown-toggleX" data-toggle="dropdownX" role="button" aria-haspopup="true" aria-expanded="false" ng-click="topNavigationCtrl.showLoginDialog()">Log in </span>
+        <div class="mobileMenuFormatting"></div>
+      </div>
+    </li>
+    <!-- If always -->
+    <li ng-show="vm.searchFieldVisibility">
+      <hr class="mobileParagraphBreak" ng-show="vm.searchFieldVisibility && !topNavigationCtrl.openSiteNoLogin" />
+      <div class="col-lg-12 mobileSearchSubContainer">
+        <form class="navbar-form navbar-left" role="search">
+          <div style="display: table; width: 100%;">
+            <div style="display: table-row;">
+              <div id="mobileSearchField">Search</div>
+              <div style="display: table-cell;">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="srch-term-mobile" id="srch-term-mobile">
+                  <div class="input-group-btn">
+                      <button ng-click="topNavigationCtrl.prepareForSearchMobile()" class="btn btn-default" ng-class="customStyle.accentColorButtonClass" type="submit">
+                          <i class="glyphicon glyphicon-search"></i>
+                      </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </li>
+  </ul>
+</div>
+</body>
+</html>
